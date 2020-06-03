@@ -6,6 +6,8 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y python3.6 python3.6-dev python3-pip
 
+RUN mkdir -p /app/backend/server/staticfiles
+
 WORKDIR /app
 COPY requirements.txt .
 RUN rm -f /usr/bin/python && ln -s /usr/bin/python3.6 /usr/bin/python
