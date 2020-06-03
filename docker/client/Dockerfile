@@ -9,7 +9,7 @@ COPY ./client/server.js /app/client
 
 ENV CLIENT_SERVER_PORT 5000
 
-ENV REACT_APP_WEBSOCKET_URL ws://3.133.136.53:8000/websockets/tasks/
+ENV REACT_APP_WEBSOCKET_URL ws://188.227.74.47:80/websockets/tasks/
 
 RUN npm install && npm run build
 
